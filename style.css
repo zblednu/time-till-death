@@ -29,4 +29,8 @@ body {
   box-sizing: border-box;
 }
 
-
+.datepicker {
+  background-color: white;
+  top: 0;
+  left: 0;
+}
