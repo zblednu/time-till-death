@@ -4,6 +4,8 @@
 
 html {
   font-size: var(--font-size);
+  font-family: monospace;
+  letter-spacing: 0;
 }
 
 * {
