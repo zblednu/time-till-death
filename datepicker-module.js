@@ -56,8 +56,10 @@ export default function createDatepicker() {
 
     breadcrumbs.firstElementChild.style.flexBasis = "15%";
     breadcrumbs.firstElementChild.style.border = "none";
+    breadcrumbs.firstElementChild.style.cursor = "pointer";
     breadcrumbs.lastElementChild.style.flexBasis = "15%";
     breadcrumbs.lastElementChild.style.border = "none";
+    breadcrumbs.lastElementChild.style.cursor = "pointer";
 
     breadcrumbs.style.fontSize = "2em";
     breadcrumbs.style.outline = "1px solid black";
@@ -89,6 +91,7 @@ export default function createDatepicker() {
       alignItems : "center",
       outline : "1px solid black",
       aspectRatio : "1 / 1",
+      cursor: "pointer",
     };
 
     for (let i = 0; i < daysInCurMonth; ++i) {
