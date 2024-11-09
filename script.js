@@ -36,6 +36,12 @@ window.addEventListener("contextmenu", (e) => {
 
 
 
+document.addEventListener("click", (e) => {
+  if ((e.target === document.body || e.target === document.documentElement) && datepicker.parentNode) {
+    datepicker.parentNode.removeChild(datepicker);
+  }
+});
+
 
 window.addEventListener("dateUpdate", (e) => {
   let date = e.detail.getDate();
